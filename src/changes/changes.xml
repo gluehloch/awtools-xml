@@ -5,6 +5,13 @@
     <author email="andre.winkler@web.de">Andre Winkler</author>
   </properties>
   <body>
+    <release version="awtools-xml-1.3" date="2016-02-02"
+         description="Updates">
+       <action dev="andrewinkler" type="removed" date="2016-02-03">
+        Moving from Sourceforge to Github. Support for Java 8.
+      </action>
+    </release>
+
     <release version="awtools-xml-1.2_a" date="2015-02-23"
          description="Updates">
        <action dev="andrewinkler" type="removed" date="2015-02-23">
