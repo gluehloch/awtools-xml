@@ -1,0 +1,36 @@
+                                    ------
+                                    AWTools Mail
+                                    ------
+                                    Andre Winkler
+                                    ------
+                                    2010-01-04
+
+AWTools Mail
+
+  The name of the the main class is 
+
++----------------------------------------------------------
+de.awtools.mail.DefaultPOP3Receiver
++----------------------------------------------------------
+
+  The constructor takes the expected parameters
+
++----------------------------------------------------------
+POP3Receiver receiver = new DefaultPOP3Receiver(
+    _host, _port, _user, _password
+);
++----------------------------------------------------------
+
+  like host name, port number, user and password credentials.
+  You start the mail download with method
+  
++----------------------------------------------------------
+receiver.download()
++----------------------------------------------------------
+
+  You have the possibility to add an event listener to the
+  POP3Receiver. With this functionality you will be informed
+  about the different ReceiverStates (defined in interface
+  POP3Receiver). After a successful download, you can call
+  messagesToList() or messagesToArray(...) to get the mail
+  messages.

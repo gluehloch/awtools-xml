@@ -1,0 +1,8 @@
+target
+.settings
+.buildpath
+.classpath
+.project
+tag.sh
+*.log
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>Change Notes</title>
+    <author email="andre.winkler@web.de">Andre Winkler</author>
+  </properties>
+  <body>
+    <release version="awtools-xml-1.2_a" date="2015-02-23"
+         description="Updates">
+       <action dev="andrewinkler" type="removed" date="2015-02-23">
+        Removed the assembly configuration from the POM. Was never used!
+      </action>
+    </release>
+
+    <release version="awtools-xml-1.2" date="2015-01-15"
+         description="Updates">
+      <action dev="andrewinkler" type="update" date="2015-01-09">
+        A new parent POM. Updated project site. Updated some dependencies.
+      </action>
+    </release>
+
+    <release version="awtools-xml-1.1" date="2013-03-22"
+         description="Mal abwarten">
+      <action dev="andrewinkler" type="update" date="2013-01-26">
+        Update to Java 7.
+      </action>
+    </release>
+  
+    <release version="awtools-mail-1.0.1-M1" date="2011-12-20"
+         description="Version update">
+      <action dev="andrewinkler" type="update" date="2011-12-03">
+        Update to Maven 3.
+      </action>
+    </release>
+
+    <release version="awtools-xml" date="2010-08-05"
+         description="Init">
+      <action dev="andrewinkler" type="add" date="2010-08-05">
+        The new xml project.
+      </action>
+    </release>
+
+  </body>
+  <footer>
+    <legal>
+      Copyright (c) @year@ The 'awtools-xml' project. All rights reserved.
+      $Revision: 2742 $ $Date: 2011-01-09 14:39:28 +0100 (So, 09 Jan 2011) $
+    </legal>
+  </footer>
+</document>
