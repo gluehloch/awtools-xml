@@ -41,8 +41,7 @@ import javax.xml.transform.URIResolver;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
-import org.apache.commons.lang.UnhandledException;
-import org.apache.commons.lang.Validate;
+import org.apache.commons.lang3.Validate;
 import org.dom4j.Document;
 import org.dom4j.io.DocumentSource;
 import org.dom4j.io.OutputFormat;
@@ -116,7 +115,7 @@ public final class TransformerUtils {
             return factory.newTransformer(source);
         } catch (TransformerConfigurationException ex) {
             log.debug("Fehler:", ex);
-            throw new UnhandledException(ex);
+            throw new RuntimeException(ex);
         }
     }
 
@@ -142,7 +141,7 @@ public final class TransformerUtils {
             transe.transform(ds, result);
         } catch (TransformerException ex) {
             log.debug("Catched an TransformerException", ex);
-            throw new UnhandledException(ex);
+            throw new RuntimeException(ex);
         }
     }
 
@@ -152,10 +151,9 @@ public final class TransformerUtils {
      * @param document Ein dom4j Dokument.
      * @param file Die zu schreibende Datei.
      * @param encoding Das Encoding.
-     * @throws UnhandledException Da ging was schief.
      */
     public static void toFile(final Document document, final File file,
-        final String encoding) throws UnhandledException {
+        final String encoding) {
 
         XMLWriter writer = null;
         try {
@@ -165,7 +163,7 @@ public final class TransformerUtils {
             writer.write(document);
         } catch (IOException ex) {
             log.debug("Fehler: ", ex);
-            throw new UnhandledException(ex);
+            throw new RuntimeException(ex);
         } finally {
             XMLUtils.close(writer);
         }
